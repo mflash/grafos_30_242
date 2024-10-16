@@ -32,7 +32,7 @@ public class DFS {
     }
 
     public void dfs(Graph g, String v) {
-        System.out.println("Visitando: " + v);
+        // System.out.println("Visitando: " + v);
         marked.add(v);
         for (String w : g.getAdj(v)) {
             if (!marked.contains(w)) {
