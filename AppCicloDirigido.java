@@ -8,13 +8,16 @@ public class AppCicloDirigido {
         g.addEdge("B", "C");
         g.addEdge("C", "D");
         g.addEdge("C", "E");
+        g.addEdge("F", "G");
+        g.addEdge("G", "H");
+        g.addEdge("H", "F");
 
         System.out.println(g.toDot());
 
-        // CicloDirigido detecta = new CicloDirigido(g);
-        // if (detecta.temCiclo())
-        // System.out.println("Tem ciclo!");
-        // else
-        // System.out.println("Não tem ciclo...");
+        CicloDirigido detecta = new CicloDirigido(g);
+        if (detecta.temCiclo())
+            System.out.println("Tem ciclo!");
+        else
+            System.out.println("Não tem ciclo...");
     }
 }
