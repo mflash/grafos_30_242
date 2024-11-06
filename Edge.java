@@ -27,6 +27,10 @@ public class Edge implements Comparable<Edge> {
     this.color = color;
   }
 
+  public void setWeight(double weight) {
+    this.weight = weight;
+  }
+
   public String getColor() {
     return color;
   }
