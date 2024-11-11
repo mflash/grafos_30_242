@@ -164,7 +164,7 @@ public class AdjMatrixEdgeWeightedDigraph {
    * @param args the command-line arguments
    */
   public static void main(String[] args) {
-    EdgeWeightedDigraph g = new EdgeWeightedDigraph("tinyEWD.txt");
+    EdgeWeightedDigraph g = new EdgeWeightedDigraph("exemplos/tinyEWD.txt");
     AdjMatrixEdgeWeightedDigraph ag = new AdjMatrixEdgeWeightedDigraph(g);
     System.out.println(ag.toDot());
     System.out.println(ag);
